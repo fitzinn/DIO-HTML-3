@@ -1,9 +1,28 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  border-bottom: 2px solid #000;
+  margin-bottom: 0.5em;
+  margin-top: 5px;
+}
+h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 0.5em;
+  margin-top: 10px;
+}
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
+ul { padding-left: 35px; }
 a { color:blue; text-decoration: none;}
 .bar {
   background-color: #f9f9fb;
@@ -24,6 +43,8 @@ a { color:blue; text-decoration: none;}
 }
 .footer {
   min-height: 100px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   border-top: solid 1px #cdcdcd;
 }
 .anchors {
@@ -35,4 +56,97 @@ a { color:blue; text-decoration: none;}
 }
 figure {
   text-align: center;
+}
+table.tab-urbanizacao {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table.tab-urbanizacao caption {
+  caption-side: top;
+  font-size: 1.5em;
+  padding: 10px;
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+table.tab-urbanizacao caption small {
+  display: block;
+  font-size: 0.8em;
+  color: #666;
+}
+
+table.tab-urbanizacao th, table.tab-urbanizacao td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table.tab-urbanizacao th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table.tab-urbanizacao tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table.tab-urbanizacao tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+table.tab-urbanizacao img {
+  max-width: 100px;
+  height: auto;
+}
+
+table.feriados {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table.feriados th, table.feriados td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table.feriados th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table.feriados tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+table.feriados tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+table.feriados img {
+  max-width: 100px;
+  height: auto;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 1000; /* To ensure it is on top of other content */
+}
+.back-to-top:hover {
+  background-color: #45a049;
 }
